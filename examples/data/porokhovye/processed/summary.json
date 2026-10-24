@@ -1,0 +1,52 @@
+{
+  "territory": {
+    "name": "муниципальный округ Пороховые",
+    "osm_relation": "R1185384",
+    "area_km2": 7.188,
+    "work_crs": "EPSG:32636"
+  },
+  "graph": {
+    "source": "https://github.com/IDUclub/blocksnet-data/releases/download/v0.0.1/saint_petersburg.zip",
+    "member": "graph_drive.pickle",
+    "mode": "drive",
+    "time_field": "time_min",
+    "time_unit": "minutes",
+    "time_source": "time_min (готовый граф BlocksNet Data)",
+    "buffer_m": 1000,
+    "nodes": 347,
+    "edges": 658
+  },
+  "blocks": {
+    "count": 97,
+    "median_area_m2": 7137.3,
+    "built_share": 0.2887
+  },
+  "population": {
+    "total": 136053.0,
+    "density_per_km2": 18928.0,
+    "type": "model estimate"
+  },
+  "schools": {
+    "count": 19,
+    "capacity_total": 4750.0,
+    "capacity_type": "model estimate (250 places by default)",
+    "demand_per_1000": 120,
+    "accessibility_min": 15,
+    "demand_total": 16332.0,
+    "provision_strong": 0.2908,
+    "provision_weak": 0.2908
+  },
+  "travel_time": {
+    "median_min": 6.96,
+    "p90_min": 9.79,
+    "max_min": 13.97,
+    "share_unreachable": 0.0
+  },
+  "limitations": [
+    "Accessibility is calculated by car, not on foot; school provision may be overstated.",
+    "School capacity is imputed as 250 places per school.",
+    "Population is modelled from living area, not taken from official statistics.",
+    "Missing floor counts are imputed as 1 floor.",
+    "Functional zones come from OSM landuse, not official zoning documents."
+  ]
+}

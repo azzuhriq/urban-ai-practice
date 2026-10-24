@@ -42,3 +42,5 @@ ENV/
 
 # PyCharm env
 .idea
+# Кэш HTTP-запросов osmnx (повторно создаётся при загрузке данных)
+examples/cache/
